@@ -1,0 +1,129 @@
+<!DOCTYPE html> <!-- Declaración del tipo de documento HTML -->
+<html lang="es"> <!-- Inicio de la etiqueta html con el atributo lang indicando español -->
+<head>
+  <meta charset="UTF-8"> <!-- Configuración de la codificación de caracteres -->
+  <title>Horario de clases</title> <!-- Título de la página -->
+  <style>
+    table { /* Estilo para las tablas */
+      width: 100%;
+      border-collapse: collapse;
+      text-align: center;
+    }
+    th, td { /* Estilo para las celdas de encabezado (th) y las celdas de datos (td) */
+      border: 1px solid black;
+      padding: 5px;
+    }
+    th { /* Estilo para las celdas de encabezado */
+      background-color: #ddd;
+    }
+    .hora { /* Estilo para las celdas de la columna de horas */
+      width: 10%;
+    }
+    .dia { /* Estilo para las celdas de los días */
+      background-color: #f7f7f7;
+    }
+  </style>
+ <style> /* Aquí empieza un segundo bloque de estilo que parece estar vacío y es innecesario */
+ 
+ }
+ h1 {
+     text-align: center;
+ }
+ 
+.M4 { /* Clase de estilo para el color de fondo de ciertas celdas */
+    background-color:aquamarine ;
+} 
+
+ .M12 {
+     background-color: yellowgreen;
+ }
+
+ .M7 {
+     background-color: orange;
+ }
+
+ .M121 {
+     background-color: peachpuff;
+ }
+
+ .M11 {
+     background-color: lightgreen;
+ }
+
+ .M8 {
+     background-color: cornflowerblue;
+ }
+
+ .noclase {
+     background-color: gainsboro;
+ }
+
+ .tutoria {
+     background-color: rgb(83, 198, 251);
+ }
+
+ .M6 {
+     background-color: plum;
+ }
+
+</style> <!-- Fin del bloque de estilo -->
+</head>
+<body>
+  <table> <!-- Inicio de la tabla -->
+    <caption>Horario de clases</caption> <!-- Título de la tabla -->
+    <thead>
+      <tr style="background-color: d"> <!-- Fila de encabezado de la tabla -->
+        <th class="Hora">Hora</th> <!-- Celdas de encabezado con la clase 'Hora' -->
+        <th class="dia">Lunes</th> <!-- Celdas de encabezado con la clase 'dia' -->
+        <th class="dia">Martes</th>
+        <th class="dia">Miércoles</th>
+        <th class="dia">Jueves</th>
+        <th class="dia">Viernes</th>
+      </tr>
+    </thead>
+    <tbody> <!-- Cuerpo de la tabla -->
+      <!-- Filas de la tabla con las horas y las clases -->
+      <tr>
+        <td class="hora">15:00 - 15:55</td> <!-- Class indica una clase que le asignamos a 15:00 - 15:55-->
+        <td crowspan="2" class="M4">M4</td> <!-- Celda de clase 'M4' que ocupa dos filas -->
+        <td rowspan="2" class="M12">M12.2</td> <!-- Celda de clase 'M12' que ocupa dos filas -->
+        <td rowspan="2" class="noclase">-</td> <!-- Celda sin clase -->
+        <td rowspan="2" class="M7">M7</td> <!-- Celda de clase 'M7' que ocupa dos filas -->
+        <td rowspan="2" class="M8">M8</td> <!-- Celda de clase 'M8' que ocupa dos filas -->
+      </tr>
+      <tr>
+        <td class="hora">15:55 - 16:50</td>
+      </tr>
+      <tr>
+        <td class="hora">16:50 - 17:45</td>
+        <td rowspan="2" class="M121">M12.1</td>
+        <td rowspan="2" class="M4">M4</td>
+        <td class="M11">M11</td>
+        <td class="M121">M12.1</td>
+        <td class="M11">M11</td>
+      </tr>
+      <tr>
+        <td class="hora">17:45 - 18:40</td>
+        <td class="M8">M8</td>
+        <td class="M11">M11</td>
+        <td class="tutoria">Tutoria</td>
+      </tr>
+      <tr>
+        <td class="hora">18:40 - 19:10</td>
+        <td colspan="5">PATIO</td> <!-- Celda que ocupa cinco columnas -->
+      <tr>
+        <td class="hora">19:10 - 20:05</td>
+        <td rowspan="2" class="M7">M7</td>
+        <td rowspan="2" class="M6">M6</td>
+        <td rowspan="2" class="M12">M12.2</td>
+        <td class="M7">M7</td>
+        <td rowspan="2"></td>
+      </tr>
+      <tr>
+        <td class="hora">20:05 - 21:00</td>
+        <td class="Jueves"></td>
+      </tr>
+    </tbody>
+  </table> <!-- Fin de la tabla -->
+</body>
+</html> <!-- Fin del documento HTML -->
